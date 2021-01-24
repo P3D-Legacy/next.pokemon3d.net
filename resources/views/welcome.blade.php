@@ -72,9 +72,9 @@
 
         <div class="bordered-section-container fadeInLeftBig">
             <div class="bg-transparent row p-3">
-                <div class="col-12 pt-4 text-center col-12 row">
+                <div class="col-12 pt-4 text-center col-12">
                     <h2 class="display-5">What does the media say about Pokémon 3D?</h2>
-                    <div class="col-12 pt-4 text-center col-12 row">
+                    <div class="col-12 pt-4 text-center col-12">
                         <a href="#" class="media-logo d-block p-3 col-sm-12 col-md-3"><img class="img-fluid"
                                                                                            src="{{asset('images/polygon-white-alt2.png')}}"></a>
                         <a href="#" class="media-logo d-block p-3 col-sm-12 col-md-3"><img class="img-fluid"
