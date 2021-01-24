@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Pokemon';
+    src: url('Pokmon-DP-Pro.eot');
+    src: url('Pokmon-DP-Pro.eot?#iefix') format('embedded-opentype'),
+        url('Pokmon-DP-Pro.woff2') format('woff2'),
+        url('Pokmon-DP-Pro.woff') format('woff'),
+        url('Pokmon-DP-Pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
