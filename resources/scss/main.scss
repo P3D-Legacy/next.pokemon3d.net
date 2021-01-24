@@ -5,6 +5,13 @@
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 $bg-color-dark-transparent: rgba(0, 0, 0, 0.3);
 
+.nav-link{
+  font-size: 1.5rem!important;
+}
+.dropdown-item{
+  font-size: 1.5rem;
+}
+
 .sections-holder{
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, $bg-color-dark-transparent 30%);
 

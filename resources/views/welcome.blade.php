@@ -7,7 +7,7 @@
             </div>
 
             <div class="wow fadeInRight col-sm-12 col-md-8 pt-4">
-                <img class="col-8 offset-2 mb-4 img-fluid" src="{{asset('images/logo_p3d.png')}}"/>
+                <img class="col-4 offset-4 mb-4 img-fluid" src="{{asset('images/logo_p3d_new.png')}}"/>
                 <p>
                     Pokémon 3D is a video game originally created by Nilllzz. It is heavily inspired by Minecraft, and
                     the Pokémon series. Pokémon 3D focused on the strong points of Pokémon Gold and Silver versions and

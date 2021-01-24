@@ -15,10 +15,10 @@
 </head>
 <body class="bg-summer">
 
-<nav class="wow fadeInDown navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="wow fadeInDown container-fluid">
-        <a class="navbar-brand col-6 col-lg-2" href="#">
-            <img class="w-100 img-fluid" src="{{asset('images/logo_p3d.png')}}"/>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand col-1 align-content-center" href="#">
+            <img class="col-8 img-fluid" src="{{asset('images/logo_p3d_new.png')}}"/>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@
     </div>
 </nav>
 
-<main id="app" class="container mw-unset ps-0 pe-0">
+<main id="app" class="container mw-unset mt-5 ps-0 pe-0">
 
     @yield('content')
 
