@@ -3,7 +3,7 @@
 @import "~tiny-slider/src/tiny-slider";
 @import "animate";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
-$bg-color-dark-transparent: rgba(0, 0, 0, 0.2);
+$bg-color-dark-transparent: rgba(0, 0, 0, 0.3);
 
 .sections-holder{
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, $bg-color-dark-transparent 30%);
@@ -54,6 +54,13 @@ footer{
       z-index:inherit;
     }
   }
+}
+
+.media-logo {
+  align-self: center;
+}
+.media-logo:hover {
+  transform: scale(1.1);
 }
 
 .mw-unset{

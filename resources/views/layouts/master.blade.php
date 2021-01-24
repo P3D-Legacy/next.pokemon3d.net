@@ -15,8 +15,8 @@
 </head>
 <body class="bg-summer">
 
-<nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
+<nav class="wow fadeInDown navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="wow fadeInDown container-fluid">
         <a class="navbar-brand col-6 col-lg-2" href="#">
             <img class="w-100 img-fluid" src="{{asset('images/logo_p3d.png')}}"/>
         </a>
