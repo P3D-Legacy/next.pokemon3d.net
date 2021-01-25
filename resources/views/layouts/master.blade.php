@@ -30,16 +30,19 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#downloadModal" href="#"><i class="fa fa-download"></i> Download <sup class="mt-0 p-1 badge bg-secondary">{{(new \App\CustHelpers\GitHubHelper())->getVersion()}}</sup></a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Forum</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Wiki</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Github</a>
+                    <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Discord</a>
+                    <a class="nav-link" href="#"><i class="fab fa-discord"></i></a>
                 </li>
                 <li class="nav-item dropstart">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -77,6 +80,18 @@
         </div>
     </footer>
 </div>
+<modal>
+    <div class="modal" id="downloadModal" tabindex="-1">
+        <div class="modal-dialog bg-dark">
+            <div class="modal-content bg-dark">
+                <div class="modal-body">
+                    <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                    @include('partials.downloadbox')
+                </div>
+            </div>
+        </div>
+    </div>
+</modal>
 
 <script src="{{asset('js/main.js')}}"></script>
 

@@ -11,6 +11,10 @@ body{
   font-size: 17pt;
 }
 
+.text-right{
+  text-align: right;
+}
+
 .nav-link{
   font-size: 1.5rem!important;
 }
@@ -56,6 +60,26 @@ body{
 }
 }
 
+.showoff_item{
+  position: relative;
+  display: block;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  box-shadow: 2px 2px;
+  text-decoration: none;
+}
+
+.showoff_item:hover{
+  box-shadow: 0px 0px;
+  text-decoration: none;
+  cursor: pointer;
+  left: 2px;
+  top: 2px;
+  color: #c3c9d2;
+}
 
 footer{
   z-index:5;
@@ -129,7 +153,22 @@ footer{
   color: white;
 }
 
-a.link-theme {
+.modal-body{
+  .btn-close{
+    background-color: white;
+
+  }
+  div{
+    margin: 0;
+  }
+}
+
+.github-avatar{
+  height: 1.2em;
+  border-radius: 500px;
+}
+
+a {
   color: #c3c9d2;
 }
 

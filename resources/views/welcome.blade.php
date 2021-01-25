@@ -2,28 +2,22 @@
 @section('content')
     <div class="bordered-section-container">
         <div class="bg-transparent bordered-section row p-3">
-            <div class="col-sm-12 col-md-4">
-                <img class="wow zoomIn img-fluid" src="{{asset('images/nilllzz.png')}}">
-            </div>
+            <div class="wow fadeInRight col-12 pt-4">
 
-            <div class="wow fadeInRight col-sm-12 col-md-8 pt-4">
-                <img class="col-4 offset-4 mb-4 img-fluid" src="{{asset('images/logo_p3d_new.png')}}"/>
+                <div class="row col-12 col-sm-8 offset-2">
+                    <img class="col-6 mb-4 img-fluid" src="{{asset('images/logo_p3d_new.png')}}"/>
+                <img class="col-4 offset-2 wow zoomIn img-fluid" src="{{asset('images/nilllzz.png')}}">
                 <p>
                     Pokémon 3D is a video game originally created by Nilllzz. It is heavily inspired by Minecraft, and
                     the Pokémon series. Pokémon 3D focused on the strong points of Pokémon Gold and Silver versions and
                     their remakes, and gives players a taste as to how the once 2D world they knew was in 3D. They could
                     even see through the eyes of their own trainer.
                 </p>
-                <p>
-                    <a class="btn btn-success btn-lg" href="#">
-                        <span class="fa fa-download"></span> Download Game
-                    </a>
-                </p>
-                <p>
-                    <small>
-                        Read more about the technical stuff about the game <a class="link-theme" href="#">here</a>.
-                    </small>
-                </p>
+                </div>
+                <div class="row col-12 col-sm-8 offset-2">
+                <div class="col-6">@include('partials.newsbox')</div>
+                <div class="col-6">@include('partials.statistics')</div>
+                </div>
             </div>
         </div>
     </div>
@@ -32,7 +26,7 @@
         <div class="bordered-section-container">
             <div class="seperator-checkerboard inverted"></div>
             <div class="bg-dark bordered-section row p-3">
-                <div class="col-sm-12 col-md-8 pt-4  wow fadeInLeftBig">
+                <div class="col-sm-12 col-md-8 pt-4  wow fadeInLeftBig ">
                     <h2 class="display-5">Nostalgia</h2>
                     <p class="lead">Remember the old days when you where playing on a GameBoy? If so; you should try out
                         this game and get the nostalgic feeling as well as visit your inner child.</p>
@@ -47,7 +41,7 @@
             <div class="bg-transparent row p-3">
                 <img class="d-block col-sm-12 col-md-2 offset-md-1 img-fluid wow fadeInLeftBig"
                      src="{{asset('images/mon/rhydon.png')}}">
-                <div class="col-sm-12 col-md-8 pt-4 wow fadeInRightBig">
+                <div class="col-sm-12 col-md-8 pt-4 wow fadeInRightBig text-right">
                     <h2 class="display-5">All Generations and Regions</h2>
                     <p class="lead">Pokémon 3D will in the future have support for all generations of pokémon. And all
                         the regions will accessible in the game.</p>

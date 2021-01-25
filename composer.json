@@ -11,9 +11,9 @@
         "php": "^7.3|^8.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
-        "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "restcord/restcord": "dev-master"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -36,6 +36,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
+            "App\\CustHelpers\\": "app/Helpers/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
