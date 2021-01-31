@@ -40,7 +40,6 @@ class XenforoHelper
     public static function getUserCount()
     {
         $data = self::sendRequest('/users');
-        dd($data);
         if(array_key_exists('errors', $data)) {
             throw new \Exception('CAN NOT COUNT USERS!');
         }
