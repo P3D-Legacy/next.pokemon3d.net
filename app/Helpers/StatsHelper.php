@@ -21,16 +21,22 @@ class StatsHelper
     }
 
     public function countDiscordMembers(){
-        if($this->discordClient == null) {
+
+        try {
+            return $this->getDiscordServer()->approximate_member_count;
+        }
+        catch(\Exception $e) {
             return 'Coming soon';
         }
-        return $this->getDiscordServer()->approximate_member_count;
     }
 
     public function countForumMembers(){
-        return 'Coming soon';
-        $count = XenforoHelper::getUserCount();
-        return $count;
+        try{
+            $count = XenforoHelper::getUserCount();
+            return $count;
+        } catch (\Exception $exception){
+            return 'Coming soon';
+        }
     }
 
     public function countPlayers(){

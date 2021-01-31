@@ -5,6 +5,7 @@ namespace App\CustHelpers;
 
 
 use Illuminate\Support\Facades\Http;
+use mysql_xdevapi\Exception;
 use RestCord\DiscordClient;
 
 class XenforoHelper
@@ -29,11 +30,19 @@ class XenforoHelper
 
     public static function getNewsItems()
     {
-        return self::sendRequest('/forums/' . self::NEWS_BOARD_ID . '/threads');
+        $data = self::sendRequest('/forums/' . self::NEWS_BOARD_ID . '/threads');
+        if(array_key_exists('errors', $data)) {
+            return ['threads' => []];
+        }
+        return $data;
     }
 
     public static function getUserCount()
     {
-        return self::sendRequest('/users');
+        $data = self::sendRequest('/users');
+        if(array_key_exists('errors', $data)) {
+            throw new \Exception('CAN NOT COUNT USERS!');
+        }
+        return $data;
     }
 }
