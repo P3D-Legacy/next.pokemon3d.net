@@ -43,6 +43,6 @@ class XenforoHelper
         if(array_key_exists('errors', $data)) {
             throw new \Exception('CAN NOT COUNT USERS!');
         }
-        return $data;
+        return $data['pagination']['total'];
     }
 }
