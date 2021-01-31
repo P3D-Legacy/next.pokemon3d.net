@@ -2,9 +2,9 @@
 
 return [
     'names' => [
-        'nilllzz',
+        'Nilllzz',
         'Darkfire',
         'DanielRTRD',
-        'mrmacgeek',
+        'Mrmacgeek',
     ]
 ];
