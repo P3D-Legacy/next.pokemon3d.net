@@ -1,5 +1,5 @@
 <div class="col-12 row p-3 ">
-    <h2 class="col-12  text-center">Latest news</h2>
+    <h2 class="col-12 text-dark text-center">Latest news</h2>
     @foreach(\App\CustHelpers\XenforoHelper::getNewsItems()['threads'] as $item)
         @if($loop->iteration > 5)
             @break
