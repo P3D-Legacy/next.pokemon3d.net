@@ -33,16 +33,16 @@
                     <a class="nav-link" data-bs-toggle="modal" data-bs-target="#downloadModal" href="#"><i class="fa fa-download"></i> Download <sup class=" mt-0 p-1 badge bg-light">{{(new \App\CustHelpers\GitHubHelper())->getVersion()}}</sup></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Forum</a>
+                    <a class="nav-link" href="https://pokemon3d.net/forum/">Forum</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Wiki</a>
+                    <a class="nav-link" href="https://pokemon3d.net/wiki/">Wiki</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fab fa-github"></i> <span class="display-sm d-md-none">Github</span></a>
+                    <a class="nav-link" href="https://github.com/P3D-Legacy/P3D-Legacy"><i class="fab fa-github"></i> <span class="display-sm d-md-none">Github</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fab fa-discord"></i> <span class="display-sm d-md-none">Discord</span></a>
+                    <a class="nav-link" href="{{config('discord.invite_url')}}"><i class="fab fa-discord"></i> <span class="display-sm d-md-none">Discord</span></a>
                 </li>
                 <li class="nav-item dropstart">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -50,9 +50,9 @@
                         More
                     </a>
                     <ul class="crystal-textbox dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">News</a></li>
-                        <li><a class="dropdown-item" href="#">Resources</a></li>
-                        <li><a class="dropdown-item" href="#">Skin Changer</a></li>
+                        <li><a class="dropdown-item" href="https://pokemon3d.net/forum/news/">News</a></li>
+                        <li><a class="dropdown-item" href="https://pokemon3d.net/forum/resources/">Resources</a></li>
+                        <li><a class="dropdown-item" href="https://skin.pokemon3d.net/">Skin Changer</a></li>
                     </ul>
                 </li>
             </ul>
@@ -81,7 +81,7 @@
     </footer>
 </div>
 <modal>
-    <div class="modal" id="downloadModal" tabindex="-1">
+    <div class="modal show row p-2" id="downloadModal" tabindex="-1">
         <div class="modal-dialog bg-dark">
             <div class="modal-content crystal-textbox ">
                 <div class="modal-body">
