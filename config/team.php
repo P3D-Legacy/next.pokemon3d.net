@@ -5,6 +5,7 @@ return [
         'Nilllzz',
         'Darkfire',
         'DanielRTRD',
+        'Tornado9797',
         'Mrmacgeek',
     ]
 ];
