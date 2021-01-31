@@ -60,6 +60,15 @@ body{
 }
 }
 
+.img-nilllzz{
+  z-index: 8;
+}
+
+.shadowed-bg{
+  background-color: rgb(0 0 0 / 35%);
+  box-shadow: 0px 0px 20px 20px rgb(0 0 0 / 35%);
+}
+
 .showoff_item{
   position: relative;
   display: block;
@@ -120,6 +129,76 @@ footer{
  * Custom translucent site header
  */
 
+.bg-grass{
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/layout/tile_grass.png");
+  background-repeat: repeat;
+}
+
+.img-auto-h{
+  height: fit-content;
+  vertical-align: middle;
+}
+
+.crystal-textbox:hover{
+  color: black;
+}
+a.crystal-textbox:hover{
+  color: #6b6b6b!important;;
+}
+.dropstart .dropdown-menu {
+  margin-top: 11px;
+}
+
+.badge-t-dark{
+  color: black
+}
+
+.crystal-textbox {
+  border-image-source: url("../img/layout/crystal_tb.png");
+  border-image-slice:132 155 132 155;
+  border-image-width:20px 20px 20px 20px;
+  border-image-outset:16px 13px 16px 13px;
+  border-image-repeat:stretch stretch;
+  background-color: white!important;
+  color: black;
+  margin: 16px 13px 16px 13px;
+  a{
+    color: black;
+  }
+  .a:hover{
+    color: #6b6b6b;
+  }
+  li{
+    a{
+      color: black!important;
+    }
+    a:hover{
+      color: #6b6b6b!important;;
+    }
+  }
+  a.btn-success{
+    color: white;
+  }
+}
+
+.bg-boards{
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/layout/tile_boards.png");
+  background-repeat: repeat;
+}
+
+.bg-summer{
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/summer.png");
+  background-repeat: repeat;
+
+}
+
 .site-header {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -136,7 +215,7 @@ footer{
 .bg-summer{
   background-attachment: fixed;
   background-position: center;
-  background-image: url("../img/summer.png");
+  background-image: url("../img/layout/bg_lab_floor.png");
   background-repeat: repeat;
   color: white;
 }
@@ -150,13 +229,14 @@ footer{
 
 
 .bg-transparent {
-  color: white;
+  color: rgba(255,255,255, 170);
 }
 
 .modal-body{
   .btn-close{
     background-color: white;
-
+    width: 0.1em;
+    height: 0.1em;
   }
   div{
     margin: 0;

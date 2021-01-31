@@ -4,19 +4,26 @@
         <div class="bg-transparent bordered-section row p-3">
             <div class="wow fadeInRight col-12 pt-4">
 
-                <div class="row col-12 col-sm-8 offset-sm-2">
-                    <img class="col-6 mb-4 img-fluid" src="{{asset('images/logo_p3d_new.png')}}"/>
-                <img class="col-4 offset-2 wow zoomIn img-fluid" src="{{asset('images/nilllzz.png')}}">
-                <p>
-                    Pokémon 3D is a video game originally created by Nilllzz. It is heavily inspired by Minecraft, and
-                    the Pokémon series. Pokémon 3D focused on the strong points of Pokémon Gold and Silver versions and
-                    their remakes, and gives players a taste as to how the once 2D world they knew was in 3D. They could
-                    even see through the eyes of their own trainer.
-                </p>
-                </div>
-                <div class="row col-12 col-sm-8 offset-sm-2">
-                <div class="col-12 col-sm-6">@include('partials.newsbox')</div>
-                <div class="col-12 col-sm-6">@include('partials.statistics')</div>
+                <div class="col-12 col-sm-8 offset-sm-2">
+                    <div class="row">
+                        <img class="col-6 mb-4 img-fluid img-auto-h" src="{{asset('images/logo_p3d_new.png')}}"/>
+                        <img class="col-4 offset-2 wow zoomIn img-fluid img-nilllzz"
+                             src="{{asset('images/nilllzz.png')}}">
+                        <p class="shadowed-bg ">
+                            Pokémon 3D is a video game originally created by Nilllzz. It is heavily inspired by
+                            Minecraft, and
+                            the Pokémon series. Pokémon 3D focused on the strong points of Pokémon Gold and Silver
+                            versions and
+                            their remakes, and gives players a taste as to how the once 2D world they knew was in 3D.
+                            They could
+                            even see through the eyes of their own trainer.
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-6">@include('partials.newsbox')</div>
+                        <div class="col-12 col-sm-6">@include('partials.statistics')</div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -30,7 +30,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#downloadModal" href="#"><i class="fa fa-download"></i> Download <sup class="mt-0 p-1 badge bg-secondary">{{(new \App\CustHelpers\GitHubHelper())->getVersion()}}</sup></a>
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#downloadModal" href="#"><i class="fa fa-download"></i> Download <sup class=" mt-0 p-1 badge bg-light">{{(new \App\CustHelpers\GitHubHelper())->getVersion()}}</sup></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Forum</a>
@@ -39,17 +39,17 @@
                     <a class="nav-link" href="#">Wiki</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
+                    <a class="nav-link" href="#"><i class="fab fa-github"></i> <span class="display-sm d-md-none">Github</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fab fa-discord"></i></a>
+                    <a class="nav-link" href="#"><i class="fab fa-discord"></i> <span class="display-sm d-md-none">Discord</span></a>
                 </li>
                 <li class="nav-item dropstart">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-bs-toggle="dropdown" data-bs-popperConfig="{placement: 'left-end'}" aria-expanded="false">
                         More
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                    <ul class="crystal-textbox dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">News</a></li>
                         <li><a class="dropdown-item" href="#">Resources</a></li>
                         <li><a class="dropdown-item" href="#">Skin Changer</a></li>
@@ -83,7 +83,7 @@
 <modal>
     <div class="modal" id="downloadModal" tabindex="-1">
         <div class="modal-dialog bg-dark">
-            <div class="modal-content bg-dark">
+            <div class="modal-content crystal-textbox ">
                 <div class="modal-body">
                     <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
                     @include('partials.downloadbox')

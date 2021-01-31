@@ -22,7 +22,7 @@ class StatsHelper
 
     public function countDiscordMembers(){
         if($this->discordClient == null) {
-            return null;
+            return 'Coming soon';
         }
         return $this->getDiscordServer()->approximate_member_count;
     }
@@ -30,7 +30,6 @@ class StatsHelper
     public function countForumMembers(){
         return 'Coming soon';
         $count = XenforoHelper::getUserCount();
-        dd($count);
         return $count;
     }
 

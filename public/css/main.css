@@ -19152,6 +19152,15 @@ body {
   z-index: inherit;
 }
 
+.img-nilllzz {
+  z-index: 8;
+}
+
+.shadowed-bg {
+  background-color: rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.35);
+}
+
 .showoff_item {
   position: relative;
   display: block;
@@ -19211,6 +19220,77 @@ footer * * {
 /*
  * Custom translucent site header
  */
+.bg-grass {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(/images/tile_grass.png?2dc88ea335027e45f0493e0192de9a91);
+  background-repeat: repeat;
+}
+
+.img-auto-h {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  vertical-align: middle;
+}
+
+.crystal-textbox:hover {
+  color: black;
+}
+
+a.crystal-textbox:hover {
+  color: #6b6b6b !important;
+}
+
+.dropstart .dropdown-menu {
+  margin-top: 11px;
+}
+
+.badge-t-dark {
+  color: black;
+}
+
+.crystal-textbox {
+  border-image-source: url(/images/crystal_tb.png?4bb0865c0e3942238e7a7a46995e32da);
+  border-image-slice: 132 155 132 155;
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 16px 13px 16px 13px;
+  border-image-repeat: stretch stretch;
+  background-color: white !important;
+  color: black;
+  margin: 16px 13px 16px 13px;
+}
+.crystal-textbox a {
+  color: black;
+}
+.crystal-textbox .a:hover {
+  color: #6b6b6b;
+}
+.crystal-textbox li a {
+  color: black !important;
+}
+.crystal-textbox li a:hover {
+  color: #6b6b6b !important;
+}
+.crystal-textbox a.btn-success {
+  color: white;
+}
+
+.bg-boards {
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(/images/tile_boards.png?ab10afde0f0ab52b974a6eb666a96c61);
+  background-repeat: repeat;
+}
+
+.bg-summer {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(/images/summer.png?c34886c685933e4e3387fc4fab3dd60c);
+  background-repeat: repeat;
+}
+
 .site-header {
   background-color: rgba(0, 0, 0, 0.85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -19230,7 +19310,7 @@ footer * * {
 .bg-summer {
   background-attachment: fixed;
   background-position: center;
-  background-image: url(/images/summer.png?c34886c685933e4e3387fc4fab3dd60c);
+  background-image: url(/images/bg_lab_floor.png?f43fb1f75df53881412ba10f9e0cb1b8);
   background-repeat: repeat;
   color: white;
 }
@@ -19246,6 +19326,8 @@ footer * * {
 
 .modal-body .btn-close {
   background-color: white;
+  width: 0.1em;
+  height: 0.1em;
 }
 .modal-body div {
   margin: 0;

@@ -1,6 +1,6 @@
 
 
-<div class="col-12 bg-dark row p-3 ">
+<div class="col-12 row p-3 ">
     <h2 class="col-12  text-center">Download current version</h2>
     <table class="col-12">
         <tr>
