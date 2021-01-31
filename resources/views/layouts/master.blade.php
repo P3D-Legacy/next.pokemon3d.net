@@ -69,7 +69,7 @@
     <div class="seperator-checkerboard inverted"></div>
     <footer class=" py-5 bg-dark">
         <div class="row">
-            <div class="col-8 p-4">
+            <div class="col-12 col-md-8 p-4">
                 <img src="{{asset('images/favicon.png')}}">
                 Pokémon 3D is not affiliated with Nintendo, Creatures Inc. or GAME FREAK Inc.
                 <br/>
@@ -77,7 +77,7 @@
                 <br/>
                 <small>© 2014-{{now()->format('Y')}}, Infihex</small>
             </div>
-            <div class="col-4 p-4">
+            <div class="col-12 col-md-4 p-4">
             @include('partials.players')
             </div>
         </div>
