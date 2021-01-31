@@ -30,7 +30,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#downloadModal" href="#"><i class="fa fa-download"></i> Download <sup class=" mt-0 p-1 badge bg-light">{{(new \App\CustHelpers\GitHubHelper())->getVersion()}}</sup></a>
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#downloadModal" href="#"><i class="fa fa-download"></i> Download <sup class=" mt-0 p-1 badge bg-dark text-light">{{(new \App\CustHelpers\GitHubHelper())->getVersion()}}</sup></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://pokemon3d.net/forum/">Forum</a>
