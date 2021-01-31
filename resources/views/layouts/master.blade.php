@@ -17,8 +17,8 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark crystal-textbox fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand col-1 align-content-center" href="#">
-            <img class="col-8 img-fluid" src="{{asset('images/logo_p3d_new.png')}}"/>
+        <a class="navbar-brand col-3 col-md-1 align-content-center" href="#">
+            <img class="col-md-8 col-12 img-fluid" src="{{asset('images/logo_p3d_new.png')}}"/>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
