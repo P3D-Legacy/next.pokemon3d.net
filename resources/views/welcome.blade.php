@@ -4,7 +4,7 @@
         <div class="bg-transparent bordered-section row p-3">
             <div class="wow fadeInRight col-12 pt-4">
 
-                <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="col-12 col-sm-8 offset-sm-2 mt-5">
                     <div class="row">
                         <img class="col-6 mb-4 img-fluid img-auto-h" src="{{asset('images/logo_p3d_new.png')}}"/>
                         <img class="col-4 offset-2 wow zoomIn img-fluid img-nilllzz"
