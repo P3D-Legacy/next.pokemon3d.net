@@ -39,7 +39,7 @@
                         this game and get the nostalgic feeling as well as visit your inner child.</p>
                 </div>
                 <img class="d-block col-sm-12 col-md-2 offset-md-1 img-fluid wow fadeInRightBig"
-                     src="{{asset('images/mon/pikachu.png')}}">
+                     src="{{asset('images/mon/Pikachu.png')}}">
             </div>
             <div class="seperator-checkerboard"></div>
         </div>
@@ -47,7 +47,7 @@
         <div class="bordered-section-container">
             <div class="bg-transparent row p-3">
                 <img class="d-block col-sm-12 col-md-2 offset-md-1 img-fluid wow fadeInLeftBig"
-                     src="{{asset('images/mon/rhydon.png')}}">
+                     src="{{asset('images/mon/Rhydon.png')}}">
                 <div class="col-sm-12 col-md-8 pt-4 wow fadeInRightBig text-right">
                     <h2 class="display-5">All Generations and Regions</h2>
                     <p class="lead">Pokémon 3D will in the future have support for all generations of pokémon. And all
@@ -65,7 +65,7 @@
                         their remakes, and gives players a taste as to how the once 2D world they knew was in 3D.</p>
                 </div>
                 <img class="d-block col-sm-12 col-md-2 offset-md-1 img-fluid wow fadeInRightBig"
-                     src="{{asset('images/mon/scizor.png')}}">
+                     src="{{asset('images/mon/Scizor.png')}}">
             </div>
             <div class="seperator-checkerboard"></div>
         </div>
