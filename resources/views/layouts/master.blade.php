@@ -15,7 +15,7 @@
 </head>
 <body class="bg-summer">
 
-<nav class="navbar navbar-expand-lg navbar-dark crystal-textbox fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark animated slideInDown crystal-textbox fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand col-3 col-md-1 align-content-center" href="#">
             <img class="col-md-8 col-12 img-fluid" src="{{asset('images/logo_p3d_new.png')}}"/>
