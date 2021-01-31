@@ -1,5 +1,5 @@
 <div class="col-12 row p-3 ">
-    <h2 class="col-12 text-dark text-center">Statistics</h2>
+    <h2 class="col-12 text-dark  crystal-textbox text-center">Statistics</h2>
 
     <a href="https://pokemon3d.net/forum/" class="col-12 showoff_item crystal-textbox pb-2 pt-2">
         <div class="row">

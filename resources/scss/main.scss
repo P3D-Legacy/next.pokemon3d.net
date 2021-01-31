@@ -11,6 +11,10 @@ body{
   font-size: 17pt;
 }
 
+.font-xs{
+  font-size: x-small;
+}
+
 .text-right{
   text-align: right;
 }
@@ -138,7 +142,7 @@ footer{
 
 .img-auto-h{
   height: fit-content;
-  vertical-align: middle;
+  align-self: center;
 }
 
 .crystal-textbox:hover{
@@ -164,6 +168,8 @@ a.crystal-textbox:hover{
   background-color: white!important;
   color: black;
   margin: 16px 13px 16px 13px;
+  font-family: Pokemon;
+  border-style: solid;
   a{
     color: black;
   }

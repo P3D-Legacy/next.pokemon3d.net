@@ -9402,7 +9402,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"); // Bootstrap 5: https://getbootstrap.com/docs/5.0
 
 
-__webpack_require__(/*! bootstrap/dist/js/bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
+var bootstrap = __webpack_require__(/*! bootstrap/dist/js/bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 
 var WOW = __webpack_require__(/*! wow.js/dist/wow.min */ "./node_modules/wow.js/dist/wow.min.js");
 
@@ -9446,6 +9446,13 @@ var animateCSS = function animateCSS(element, animation) {
     })
   );
 };
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl, {
+    template: '<div class="tooltip"><div class="tooltip-inner crystal-textbox"></div></div>'
+  });
+});
 
 /***/ }),
 

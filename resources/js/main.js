@@ -4,7 +4,7 @@ require('./bootstrap');
 const $ = require( "jquery" );
 
 // Bootstrap 5: https://getbootstrap.com/docs/5.0
-require('bootstrap/dist/js/bootstrap');
+const bootstrap = require('bootstrap/dist/js/bootstrap');
 const WOW = require('wow.js/dist/wow.min');
 require('tiny-slider/src/tiny-slider');
 require('glightbox/src/js/glightbox');
@@ -46,3 +46,10 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 
         node.addEventListener('animationend', handleAnimationEnd, {once: true});
     });
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl,{
+        template: '<div class="tooltip"><div class="tooltip-inner crystal-textbox"></div></div>'
+    })
+})

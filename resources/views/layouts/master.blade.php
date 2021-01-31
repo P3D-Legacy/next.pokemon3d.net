@@ -15,7 +15,7 @@
 </head>
 <body class="bg-summer">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark crystal-textbox fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand col-1 align-content-center" href="#">
             <img class="col-8 img-fluid" src="{{asset('images/logo_p3d_new.png')}}"/>
@@ -69,7 +69,7 @@
     <div class="seperator-checkerboard inverted"></div>
     <footer class=" py-5 bg-dark">
         <div class="row">
-            <div class="col-12 p-4">
+            <div class="col-8 p-4">
                 <img src="{{asset('images/favicon.png')}}">
                 Pokémon 3D is not affiliated with Nintendo, Creatures Inc. or GAME FREAK Inc.
                 <br/>
@@ -77,12 +77,15 @@
                 <br/>
                 <small>© 2014-{{now()->format('Y')}}, Infihex</small>
             </div>
+            <div class="col-4 p-4">
+            @include('partials.players')
+            </div>
         </div>
     </footer>
 </div>
 <modal>
     <div class="modal show row p-2" id="downloadModal" tabindex="-1">
-        <div class="modal-dialog bg-dark">
+        <div class="modal-dialog">
             <div class="modal-content crystal-textbox ">
                 <div class="modal-body">
                     <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
