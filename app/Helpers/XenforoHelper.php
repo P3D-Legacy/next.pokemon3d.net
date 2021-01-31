@@ -9,8 +9,6 @@ use RestCord\DiscordClient;
 
 class XenforoHelper
 {
-
-    const BASE_URL = 'https://pokemon3d.net/forum/api';
     const METHOD_GET = 'get';
     const METHOD_POST = 'post';
     const NEWS_BOARD_ID = '4';
@@ -21,13 +19,12 @@ class XenforoHelper
             $method = $data;
             $data = [];
         }
-        $url = self::BASE_URL . $endpoint;
+        $url =  config('xenforo.base_url') . $endpoint;
         $response = Http::withHeaders([
             'XF-Api-Key' => config('xenforo.apikey')
         ])->$method($url, $data);
         $decodedResponse = json_decode($response, true);
         return $decodedResponse;
-        dd($decodedResponse);
     }
 
     public static function getNewsItems()

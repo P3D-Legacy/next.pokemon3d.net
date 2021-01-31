@@ -15,7 +15,7 @@ class GitHubHelper
     {
         $this->githubData = Cache::get("current_version",
             function () {
-                $ApiUrl = "https://api.github.com/repos/P3D-Legacy/P3D-Legacy/releases/latest";
+                $ApiUrl = config('github.base_url') . "/releases/latest";
 
                 $response = Http::withHeaders([
                     'X-First' => 'foo',
