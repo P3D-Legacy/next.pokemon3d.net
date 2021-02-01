@@ -53,3 +53,13 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         template: '<div class="tooltip"><div class="tooltip-inner crystal-textbox"></div></div>'
     })
 })
+
+$(document).ready(function () {
+    $('.selectBox-square').height($('.selectBox-square').width());
+    $('.selectBox-square').click(function () {
+        var selector = $(this).attr('target-input');
+        $('.selectBox-square').removeClass('selectBox-square-selected')
+        $(this).addClass('selectBox-square-selected')
+        $('.selectBox-input[data-selector="'+selector+'"]').click();
+    })
+})

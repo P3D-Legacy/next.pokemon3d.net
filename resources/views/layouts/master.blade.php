@@ -27,7 +27,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" @if(Illuminate\Support\Facades\Route::current()->getName() == 'index') id="nav-current"  aria-current="page"  href="#" @else href="{{route('index')}}" @endif> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" @if( Illuminate\Support\Str::contains(Illuminate\Support\Facades\Route::current()->getName(),'trainercard.')) id="nav-current"  aria-current="page"  href="#" @else href="{{route('trainercard.index')}}" @endif>Trainercard</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="modal" data-bs-target="#downloadModal" href="#"><i class="fa fa-download"></i> Download <sup class=" mt-0 p-1 badge bg-dark text-light">{{(new \App\CustHelpers\GitHubHelper())->getVersion()}}</sup></a>

@@ -4,76 +4,85 @@
 @import "animate";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "../css/pokefont/pokefont.css";
+
 $bg-color-dark-transparent: rgba(0, 0, 0, 0.3);
 
-body{
+body {
   font-family: 'Pokemon';
   font-size: 17pt;
 }
 
-.font-xs{
+.font-xs {
   font-size: x-small;
 }
 
-.text-right{
+.text-right {
   text-align: right;
 }
 
-.nav-link{
-  font-size: 1.5rem!important;
+.nav-link {
+  font-size: 1.5rem !important;
 }
-.dropdown-item{
+
+a.nav-link#nav-current {
+  color: #6b6b6b !important;
+}
+
+.dropdown-item {
   font-size: 1.5rem;
 }
 
-.sections-holder{
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, $bg-color-dark-transparent 30%);
+.sections-holder {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, $bg-color-dark-transparent 30%);
 
 }
-.bg-transparent-dark{
+
+.bg-transparent-dark {
   background-color: $bg-color-dark-transparent;
 }
 
-.bordered-section-container{
+.bordered-section-container {
   overflow: hidden;
-.seperator-checkerboard{
-  z-index: 1;
-  top: -43px;
-  position: relative;
-  background-repeat: repeat-x;
-  height: 193px;
-  width: 110%;
-  left: -5%;
-  background-image: url('../img/layout/transition-checkerboard.png');
 
-  transform: rotate(177deg);
+  .seperator-checkerboard {
+    z-index: 1;
+    top: -43px;
+    position: relative;
+    background-repeat: repeat-x;
+    height: 193px;
+    width: 110%;
+    left: -5%;
+    background-image: url('../img/layout/transition-checkerboard.png');
 
-}
-.seperator-checkerboard.inverted{
-  top: 43px;
-  transform: scaleX(-1) rotate(3deg);
-}
+    transform: rotate(177deg);
 
-.bordered-section {
-  z-index:5;
-
-  *{
-    z-index:inherit;
   }
 
-}
+  .seperator-checkerboard.inverted {
+    top: 43px;
+    transform: scaleX(-1) rotate(3deg);
+  }
+
+  .bordered-section {
+    z-index: 5;
+
+    * {
+      z-index: inherit;
+    }
+
+  }
 }
 
-.img-nilllzz{
+.img-nilllzz {
   z-index: 8;
 }
 
-.shadowed-bg{
+.shadowed-bg {
   background-color: rgb(0 0 0 / 35%);
   box-shadow: 0px 0px 20px 20px rgb(0 0 0 / 35%);
 }
 
-.showoff_item{
+.showoff_item {
   position: relative;
   display: block;
   margin: 0.5rem;
@@ -85,7 +94,7 @@ body{
   text-decoration: none;
 }
 
-.showoff_item:hover{
+.selectBox-square-selected {
   box-shadow: 0px 0px;
   text-decoration: none;
   cursor: pointer;
@@ -94,14 +103,24 @@ body{
   color: #c3c9d2;
 }
 
-footer{
-  z-index:5;
 
-  *{
-    z-index:inherit;
+.showoff_item:hover {
+  box-shadow: 0px 0px;
+  text-decoration: none;
+  cursor: pointer;
+  left: 2px;
+  top: 2px;
+  color: #c3c9d2;
+}
 
-    *{
-      z-index:inherit;
+footer {
+  z-index: 5;
+
+  * {
+    z-index: inherit;
+
+    * {
+      z-index: inherit;
     }
   }
 }
@@ -109,12 +128,13 @@ footer{
 .media-logo {
   align-self: center;
 }
+
 .media-logo:hover {
   transform: scale(1.1);
 }
 
-.mw-unset{
-  max-width: unset!important;
+.mw-unset {
+  max-width: unset !important;
 }
 
 .bd-placeholder-img {
@@ -133,29 +153,31 @@ footer{
  * Custom translucent site header
  */
 
-.bg-grass{
+.bg-grass {
   background-attachment: fixed;
   background-position: center;
   background-image: url("../img/layout/tile_grass.png");
   background-repeat: repeat;
 }
 
-.img-auto-h{
+.img-auto-h {
   height: fit-content;
   align-self: center;
 }
 
-.crystal-textbox:hover{
+.crystal-textbox:hover {
   color: black;
 }
-a.crystal-textbox:hover{
-  color: #6b6b6b!important;;
+
+a.crystal-textbox:hover {
+  color: #6b6b6b !important;;
 }
+
 .dropstart .dropdown-menu {
   margin-top: 11px;
 }
 
-.badge-t-dark{
+.badge-t-dark {
   color: black
 }
 
@@ -163,33 +185,38 @@ a.crystal-textbox:hover{
   border-image-source: url("../img/layout/crystal_tb.png");
   border-image-slice: 155 155 155 155;
   border-image-width: 25px 20px 25px 20px;
-  border-image-outset:16px 13px 16px 13px;
-  border-image-repeat:stretch stretch;
-  background-color: white!important;
+  border-image-outset: 16px 13px 16px 13px;
+  border-image-repeat: stretch stretch;
+  background-color: white !important;
   color: black;
   margin: 16px 13px 16px 13px;
   font-family: Pokemon;
   border-style: solid;
-  a{
+
+  a {
     color: black;
   }
-  .a:hover{
+
+  .a:hover {
     color: #6b6b6b;
   }
-  li{
-    a{
-      color: black!important;
+
+  li {
+    a {
+      color: black !important;
     }
-    a:hover{
-      color: #6b6b6b!important;;
+
+    a:hover {
+      color: #6b6b6b !important;;
     }
   }
-  a.btn-success{
+
+  a.btn-success {
     color: white;
   }
 }
 
-.bg-boards{
+.bg-boards {
   color: white;
   background-attachment: fixed;
   background-position: center;
@@ -197,7 +224,7 @@ a.crystal-textbox:hover{
   background-repeat: repeat;
 }
 
-.bg-summer{
+.bg-summer {
   background-attachment: fixed;
   background-position: center;
   background-image: url("../img/summer.png");
@@ -210,46 +237,52 @@ a.crystal-textbox:hover{
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
+
 .site-header a {
   color: #8e8e8e;
   transition: color .15s ease-in-out;
 }
+
 .site-header a:hover {
   color: #fff;
   text-decoration: none;
 }
-.bg-summer{
+
+.bg-summer {
   background-attachment: fixed;
   background-position: center;
   background-image: url("../img/layout/bg_lab_floor.png");
   background-repeat: repeat;
   color: white;
 }
-.bg-scrolling{
+
+.bg-scrolling {
 
 }
-.mon-holder{
+
+.mon-holder {
   border-radius: 21px 21px 0 0;
   height: 100%;
 }
 
 
 .bg-transparent {
-  color: rgba(255,255,255, 170);
+  color: rgba(255, 255, 255, 170);
 }
 
-.modal-body{
-  .btn-close{
+.modal-body {
+  .btn-close {
     background-color: white;
     width: 0.1em;
     height: 0.1em;
   }
-  div{
+
+  div {
     margin: 0;
   }
 }
 
-.github-avatar{
+.github-avatar {
   height: 1.2em;
   border-radius: 500px;
 }

@@ -15,4 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+})->name('index');
+
+
+
+Route::name('trainercard.')->prefix('trainercard')->group( function () {
+    Route::get('/', 'App\Http\Controllers\TrainercardController@index')->name('index');
+    Route::get('/generate', 'App\Http\Controllers\TrainercardController@generate')->name('generate');
+    Route::get('/get', 'App\Http\Controllers\TrainercardController@getImage')->name('getUrl');
 });

@@ -14,8 +14,11 @@ class XenforoHelper
     const METHOD_POST = 'post';
     const NEWS_BOARD_ID = '4';
 
-    private static function sendRequest($endpoint, $data = [], $method = self::METHOD_GET)
+    public static function sendRequest($endpoint, $data = [], $method = self::METHOD_GET)
     {
+        if(config('xenforo.apikey') == null) {
+            return ['errors' => []];
+        }
         if (is_string($data)) {
             $method = $data;
             $data = [];
