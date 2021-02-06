@@ -126,7 +126,7 @@ class TrainercardHelper
         $offsetX = 0;
         $offsetY = $spriteHeight * 2;
         $resizeFactor = 2;
-            $sprite->crop($spriteWidth, $spriteHeight, $offsetX, $offsetY)
+            $sprite->crop(round($spriteWidth), round($spriteHeight), $offsetX, $offsetY)
                 ->resize($spriteWidth * $resizeFactor, $spriteHeight * $resizeFactor)
                 ->save($spritePath);
         return $spritePath;
