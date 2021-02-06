@@ -110,7 +110,7 @@ class TrainercardHelper
     private function collectSkinData($name)
     {
         // Get info from upcoming APIs
-        $this->playerSpriteSheet = file_get_contents(public_path('img/trainercard/spritesheet_dummy.png'));
+        $this->playerSpriteSheet = file_get_contents(resource_path('img/trainercard/spritesheet_dummy.png'));
 
     }
 
