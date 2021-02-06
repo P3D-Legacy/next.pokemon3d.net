@@ -60,7 +60,11 @@ class TrainercardHelper
         if ($this->backgroundId == self::BACKGROUND_CLEAR) {
             $image->fill(self::BACKGROUNDS[$this->backgroundId]['filling'], 89, 29);
         } else{
-            $image->fill(public_path(self::BACKGROUNDS[$this->backgroundId]['filling']), 89, 29);
+
+            $canvas = $this->imagemanager->canvas($image->width(), $image->height());
+            $canvas->fill(public_path(self::BACKGROUNDS[$this->backgroundId]['filling']), 89, 29);
+            $canvas->insert($image);
+            $image = $canvas;
         }
 
         return $image;
@@ -252,7 +256,7 @@ class TrainercardHelper
             $trainercard->insert($sprite, 'top-left', $partySlotOffsetX, $partySlotOffsetY);
             $partySlot++;
         }
-            $this->setBackground($trainercard);
+            $trainercard = $this->setBackground($trainercard);
 
             return $trainercard;
 
