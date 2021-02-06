@@ -23,7 +23,7 @@ class XenforoHelper
             $method = $data;
             $data = [];
         }
-        $url =  config('xenforo.base_url') . $endpoint;
+        $url = config('xenforo.base_url') . $endpoint;
         $response = Http::withHeaders([
             'XF-Api-Key' => config('xenforo.apikey')
         ])->$method($url, $data);
@@ -34,6 +34,7 @@ class XenforoHelper
     public static function getNewsItems()
     {
         $data = self::sendRequest('/forums/' . self::NEWS_BOARD_ID . '/threads');
+
         if(array_key_exists('errors', $data)) {
             return ['threads' => []];
         }
