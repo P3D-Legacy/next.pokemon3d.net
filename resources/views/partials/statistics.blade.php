@@ -18,7 +18,7 @@
     <a href="#"  data-bs-toggle="modal" data-bs-target="#downloadModal"  class="col-12 showoff_item crystal-textbox pb-2 pt-2">
         <div class="row">
             <span><i class="fas fa-gamepad"></i>
-            Players:
+            Players online right now:
             {{(new \App\CustHelpers\StatsHelper())->countPlayers()}}</span>
         </div>
     </a>

@@ -4,11 +4,14 @@
 namespace App\CustHelpers;
 
 
+use Illuminate\Support\Facades\Http;
 use RestCord\DiscordClient;
 
 class StatsHelper
 {
 
+    const METHOD_GET = 'get';
+    const METHOD_POST = 'post';
     private $discordClient;
 
     public function __construct()
@@ -40,8 +43,27 @@ class StatsHelper
     }
 
     public function countPlayers(){
-        return 'Coming soon';
+        $data = self::sendRequest("/server/status");
+
+        return count($data['players']);
     }
 
+    public static function sendRequest($endpoint, $data = [], $method = self::METHOD_GET)
+    {
+        if(config('gameserver.base_url') == null) {
+            return ['errors' => []];
+        }
+        if (is_string($data)) {
+            $method = $data;
+            $data = [];
+        }
+
+
+        $url = config('gameserver.base_url') . $endpoint;
+        $response = Http::withHeaders([
+        ])->$method($url, $data);
+        $decodedResponse = json_decode($response, true);
+        return $decodedResponse;
+    }
 
 }
