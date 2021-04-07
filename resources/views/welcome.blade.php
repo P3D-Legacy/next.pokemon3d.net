@@ -78,13 +78,13 @@
                 <div class="col-12 pt-4 text-center col-12">
                     <h2 class="display-5">What does the media say about Pokémon 3D?</h2>
                     <div class="col-12 pt-4 text-center col-12 row">
-                        <a href="#" class="media-logo d-block p-3 col-sm-12 col-md-3"><img class="img-fluid"
+                        <a href="https://www.polygon.com/2012/12/7/3740086/pokemon-3d-interview" class="media-logo d-block p-3 col-sm-12 col-md-4"><img class="img-fluid"
                                                                                            src="{{asset('images/polygon-white-alt2.png')}}"></a>
-                        <a href="#" class="media-logo d-block p-3 col-sm-12 col-md-3"><img class="img-fluid"
+                        <a href="https://www.kotaku.com.au/2012/12/this-fan-made-pokemon-remake-is-in-3d-and-first-person/" class="media-logo d-block p-3 col-sm-12 col-md-4"><img class="img-fluid"
                                                                                            src="{{asset('images/kotaku-white.png')}}"></a>
-                        <a href="#" class="media-logo d-block p-3 col-sm-12 col-md-3"><img class="img-fluid"
-                                                                                           src="{{asset('images/superlevel-white.png')}}"></a>
-                        <a href="#" class="media-logo d-block p-3 col-sm-12 col-md-3"><img class="img-fluid"
+{{--                        <a href="#" class="media-logo d-block p-3 col-sm-12 col-md-3"><img class="img-fluid"
+                                                                                           src="{{asset('images/superlevel-white.png')}}"></a>--}}
+                        <a href="https://www.theverge.com/2014/2/25/5445930/pokemon-3d-oculus-rift" class="media-logo d-block p-3 col-sm-12 col-md-4"><img class="img-fluid"
                                                                                            src="{{asset('images/theverge-white.png')}}"></a>
                     </div>
                 </div>
