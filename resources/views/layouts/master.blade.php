@@ -78,7 +78,7 @@
                 <br/>
                 pokemon3d.net is owned and operated by Infihex
                 <br/>
-                <small>© 2014-{{now()->format('Y')}}, Infihex</small>
+                <small>Website is <a href="https://github.com/P3D-Legacy/pokemon3d.net">open-source</a> and is created by our <a href="https://github.com/P3D-Legacy/pokemon3d.net/graphs/contributors">contributors</a>.</small>
             </div>
             <div class="col-12 col-md-4 p-4">
             @include('partials.players')
