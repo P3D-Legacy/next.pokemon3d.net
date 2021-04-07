@@ -53,8 +53,8 @@
                         More
                     </a>
                     <ul class="crystal-textbox dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="https://pokemon3d.net/forum/news/">News</a></li>
-                        <li><a class="dropdown-item" href="https://pokemon3d.net/forum/resources/">Resources</a></li>
+                        <li><a class="dropdown-item" href="{{config('xenforo.base_web_url')}}/news/">News</a></li>
+                        <li><a class="dropdown-item" href="{{config('xenforo.base_web_url')}}/resources/">Resources</a></li>
                         <li><a class="dropdown-item" href="https://skin.pokemon3d.net/">Skin Changer</a></li>
                     </ul>
                 </li>
