@@ -7,6 +7,9 @@
 <a href="https://discordapp.com/invite/EUhwdrq" target="_blank"><img src="https://img.shields.io/discord/299181628188524544" alt="Discord"></a>
 </p>
 
+## Preview
+A preview of this site is available here: https://next.pokemon3d.net/
+
 ## About
 
 This site is a *work in progress* and has not been published yet. This will be replacing the design from 2014.
