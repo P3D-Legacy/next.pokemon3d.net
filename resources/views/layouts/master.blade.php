@@ -42,10 +42,10 @@
                     <a class="nav-link" href="https://pokemon3d.net/wiki/">Wiki</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/P3D-Legacy/P3D-Legacy"><i class="fab fa-github"></i> <span class="display-sm d-md-none">Github</span></a>
+                    <a class="nav-link" target="_blank"  href="https://github.com/P3D-Legacy/P3D-Legacy"><i class="fab fa-github"></i> <span class="display-sm d-md-none">Github</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{config('discord.invite_url')}}"><i class="fab fa-discord"></i> <span class="display-sm d-md-none">Discord</span></a>
+                    <a class="nav-link" target="_blank" href="{{config('discord.invite_url')}}"><i class="fab fa-discord"></i> <span class="display-sm d-md-none">Discord</span></a>
                 </li>
                 <li class="nav-item dropstart">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
