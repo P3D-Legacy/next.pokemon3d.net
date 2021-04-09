@@ -13,10 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('index');
-
+Route::get('/', 'App\Http\Controllers\MainController@index')->name('index');
+Route::get('/bg/{background}', 'App\Http\Controllers\MainController@switchBackground')->name('bgswitch');
 
 
 Route::name('trainercard.')->prefix('trainercard')->group( function () {

@@ -13,8 +13,11 @@
 
 
 </head>
-<body class="bg-summer">
-
+@if(\Illuminate\Support\Facades\Session::has('user_bg'))
+    <body class="bg-{{\Illuminate\Support\Facades\Session::get('user_bg')}}">
+@else
+    <body class="bg-summer">
+@endif
 <nav class="navbar navbar-expand-lg navbar-dark animated slideInDown crystal-textbox fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand col-3 col-md-1 align-content-center" href="#">
@@ -56,6 +59,16 @@
                         <li><a class="dropdown-item" href="{{config('xenforo.base_web_url')}}/news/">News</a></li>
                         <li><a class="dropdown-item" href="{{config('xenforo.base_web_url')}}/resources/">Resources</a></li>
                         <li><a class="dropdown-item" href="https://skin.pokemon3d.net/">Skin Changer</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropstart">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarBgDropdown" role="button"
+                       data-bs-toggle="dropdown" data-bs-popperConfig="{placement: 'left-end'}" aria-expanded="false">
+                        Background
+                    </a>
+                    <ul class="crystal-textbox dropdown-menu dropdown-menu-dark" aria-labelledby="navbarBgDropdown">
+                        <li><a class="dropdown-item" href="{{route('bgswitch', 'bg_lab_floor')}}"><img src="{{asset('images/layout/bg_lab_floor.png')}}" class="col-12 h-50"></a></li>
+                        <li><a class="dropdown-item" href="{{route('bgswitch', 'spring')}}"><img src="{{asset('images/layout/spring.png')}}" class="col-12 h-50"><img></a></li>
                     </ul>
                 </li>
             </ul>

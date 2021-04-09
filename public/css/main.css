@@ -19310,6 +19310,20 @@ a.crystal-textbox:hover {
   background-repeat: repeat;
 }
 
+.bg-spring {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(/images/spring.png?00e4cc86f3c60d85a414ca82c9b0f5bb);
+  background-repeat: repeat;
+}
+
+.bg-bg_lab_floor {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(/images/bg_lab_floor.png?f43fb1f75df53881412ba10f9e0cb1b8);
+  background-repeat: repeat;
+}
+
 .site-header {
   background-color: rgba(0, 0, 0, 0.85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);

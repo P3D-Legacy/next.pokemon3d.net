@@ -232,6 +232,22 @@ a.crystal-textbox:hover {
 
 }
 
+.bg-spring {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/layout/spring.png");
+  background-repeat: repeat;
+
+}
+
+.bg-bg_lab_floor {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/layout/bg_lab_floor.png");
+  background-repeat: repeat;
+
+}
+
 .site-header {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
