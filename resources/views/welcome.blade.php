@@ -61,7 +61,7 @@
         <div class="bordered-section-container">
             <div class="seperator-checkerboard inverted"></div>
             <div class="bg-dark bordered-section row p-3">
-                <div class="col-sm-12 col-md-8 pt-4 wow fadeInLeftBig">
+                <div class="col-sm-12 col-md-8 pt-4 wow text-light fadeInLeftBig">
                     <h2 class="display-5">A New Experience</h2>
                     <p class="lead">Pokémon 3D focused on the strong points of Pokémon Gold and Silver versions and
                         their remakes, and gives players a taste as to how the once 2D world they knew was in 3D.</p>
