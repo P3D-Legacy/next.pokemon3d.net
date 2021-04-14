@@ -83,7 +83,7 @@
 </main>
 <div class="bg-transparent-dark bordered-section-container">
     <div class="seperator-checkerboard inverted"></div>
-    <footer class=" py-5 bg-dark">
+    <footer class="text-light py-5 bg-dark">
         <div class="row">
             <div class="col-12 col-md-8 p-4">
                 <img src="{{asset('images/favicon.png')}}">
