@@ -57,17 +57,6 @@
                         <li><a class="dropdown-item" href="https://skin.pokemon3d.net/">Skin Changer</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropstart">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarBgDropdown" role="button"
-                       data-bs-toggle="dropdown" data-bs-popperConfig="{placement: 'left-end'}" aria-expanded="false">
-                        Background
-                    </a>
-                    <ul class="crystal-textbox dropdown-menu dropdown-menu-dark" aria-labelledby="navbarBgDropdown">
-                        <li class="bg-spring text-center"><a class="dropdown-item" style="color:white!important;" href="{{route('bgswitch', 'spring')}}">{{__('GREEN')}}</a></li>
-                        <li class="bg-bg_lab_floor text-center"><a class="dropdown-item" href="{{route('bgswitch', 'bg_lab_floor')}}">{{__('BLUE')}}</a></li>
-                        <li class="bg-bg_carpet text-center"><a class="dropdown-item" href="{{route('bgswitch', 'bg_carpet')}}">{{__('RED')}}</a></li>
-                    </ul>
-                </li>
             </ul>
         </div>
     </div>
