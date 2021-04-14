@@ -13,11 +13,7 @@
 
 
 </head>
-@if(\Illuminate\Support\Facades\Session::has('user_bg'))
-    <body class="bg-{{\Illuminate\Support\Facades\Session::get('user_bg')}}">
-@else
-    <body class="bg-spring">
-@endif
+    <body class="bg-{{(new \App\CustHelpers\StatsHelper())->getInGameSeason()}}">
 <nav class="navbar navbar-expand-lg navbar-dark animated slideInDown crystal-textbox fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand col-3 col-md-1 align-content-center" href="#">

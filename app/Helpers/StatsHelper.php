@@ -48,6 +48,22 @@ class StatsHelper
         return count($data['players']);
     }
 
+    public function getInGameSeason(){
+        $season = date('W') % 4;
+        $seasonName = "spring";
+#echo "Season (WOY % 4): " . $season;
+        if($season == 0) {
+            $seasonName = "fall";
+        } elseif($season == 1) {
+            $seasonName = "winter";
+        } elseif($season == 2) {
+            $seasonName = "spring";
+        } elseif($season == 3) {
+            $seasonName = "summer";
+        }
+        return $seasonName;
+    }
+
     public static function sendRequest($endpoint, $data = [], $method = self::METHOD_GET)
     {
         if(config('gameserver.base_url') == null) {

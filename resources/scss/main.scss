@@ -227,7 +227,7 @@ a.crystal-textbox:hover {
 .bg-summer {
   background-attachment: fixed;
   background-position: center;
-  background-image: url("../img/summer.png");
+  background-image: url("../img/layout/bg_summer.png");
   background-repeat: repeat;
 
 }
@@ -235,7 +235,23 @@ a.crystal-textbox:hover {
 .bg-spring {
   background-attachment: fixed;
   background-position: center;
-  background-image: url("../img/layout/spring.png");
+  background-image: url("../img/layout/bg_spring.png");
+  background-repeat: repeat;
+
+}
+
+.bg-fall {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/layout/bg_fall.png");
+  background-repeat: repeat;
+
+}
+
+.bg-winter {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/layout/bg_winter.png");
   background-repeat: repeat;
 
 }
