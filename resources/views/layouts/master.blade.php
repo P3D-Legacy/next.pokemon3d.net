@@ -68,6 +68,7 @@
                     </a>
                     <ul class="crystal-textbox dropdown-menu dropdown-menu-dark" aria-labelledby="navbarBgDropdown">
                         <li class="bg-bg_lab_floor text-center"><a class="dropdown-item" href="{{route('bgswitch', 'bg_lab_floor')}}">{{__('BLUE')}}</a></li>
+                        <li class="bg-bg_carpet text-center"><a class="dropdown-item" href="{{route('bgswitch', 'bg_carpet')}}">{{__('RED')}}</a></li>
                         <li class="bg-spring text-center"><a class="dropdown-item" style="color:white!important;" href="{{route('bgswitch', 'spring')}}">{{__('GREEN')}}</a></li>
                     </ul>
                 </li>
