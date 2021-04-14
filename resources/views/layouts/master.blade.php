@@ -67,8 +67,8 @@
                         Background
                     </a>
                     <ul class="crystal-textbox dropdown-menu dropdown-menu-dark" aria-labelledby="navbarBgDropdown">
-                        <li><a class="dropdown-item" href="{{route('bgswitch', 'bg_lab_floor')}}"><img src="{{asset('images/layout/bg_lab_floor.png')}}" class="col-12 h-50"></a></li>
-                        <li><a class="dropdown-item" href="{{route('bgswitch', 'spring')}}"><img src="{{asset('images/layout/spring.png')}}" class="col-12 h-50"><img></a></li>
+                        <li class="bg-bg_lab_floor text-center"><a class="dropdown-item" href="{{route('bgswitch', 'bg_lab_floor')}}">{{__('BLUE')}}</a></li>
+                        <li class="bg-spring text-center"><a class="dropdown-item" style="color:white!important;" href="{{route('bgswitch', 'spring')}}">{{__('GREEN')}}</a></li>
                     </ul>
                 </li>
             </ul>
