@@ -22,4 +22,11 @@
             {{(new \App\CustHelpers\StatsHelper())->countPlayers()}}</span>
         </div>
     </a>
+    <a href="#"  data-bs-toggle="modal" data-bs-target="#downloadModal"  class="col-12 showoff_item crystal-textbox pb-2 pt-2">
+        <div class="row">
+            <span><i class="fas fa-calendar-alt"></i>
+            Current in-game season:
+            {{\Illuminate\Support\Str::ucfirst((new \App\CustHelpers\StatsHelper())->getInGameSeason())}}</span>
+        </div>
+    </a>
 </div>
