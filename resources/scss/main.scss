@@ -46,7 +46,7 @@ a.nav-link#nav-current {
 
   .seperator-checkerboard {
     z-index: 1;
-    top: -43px;
+    top: -60px;
     position: relative;
     background-repeat: repeat-x;
     height: 193px;
@@ -59,7 +59,7 @@ a.nav-link#nav-current {
   }
 
   .seperator-checkerboard.inverted {
-    top: 43px;
+    top: 60px;
     transform: scaleX(-1) rotate(3deg);
   }
 
