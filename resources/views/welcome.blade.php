@@ -35,7 +35,7 @@
         <div class="bordered-section-container">
             <div class="seperator-checkerboard inverted"></div>
             <div class="bg-dark bordered-section row p-3">
-                <div class="col-sm-12 col-md-8 pt-4  wow fadeInLeftBig ">
+                <div class="col-sm-12 col-md-8 pt-4 text-light wow fadeInLeftBig ">
                     <h2 class="display-5">Nostalgia</h2>
                     <p class="lead">Remember the old days when you where playing on a GameBoy? If so; you should try out
                         this game and get the nostalgic feeling as well as visit your inner child.</p>
@@ -48,7 +48,7 @@
 
         <div class="bordered-section-container">
             <div class="bg-transparent row p-3">
-                <img class="d-block col-sm-12 col-md-2 offset-md-1 img-fluid wow fadeInLeftBig"
+                <img class="d-block col-sm-12 col-md-2 offset-md-1 img-fluid text-light  wow fadeInLeftBig"
                      src="{{asset('images/mon/Rhydon.png')}}">
                 <div class="col-sm-12 col-md-8 pt-4 wow fadeInRightBig text-right">
                     <h2 class="display-5">All Generations and Regions</h2>
@@ -61,12 +61,12 @@
         <div class="bordered-section-container">
             <div class="seperator-checkerboard inverted"></div>
             <div class="bg-dark bordered-section row p-3">
-                <div class="col-sm-12 col-md-8 pt-4 wow fadeInLeftBig">
+                <div class="col-sm-12 col-md-8 pt-4 wow text-light fadeInLeftBig">
                     <h2 class="display-5">A New Experience</h2>
                     <p class="lead">Pokémon 3D focused on the strong points of Pokémon Gold and Silver versions and
                         their remakes, and gives players a taste as to how the once 2D world they knew was in 3D.</p>
                 </div>
-                <img class="d-block col-sm-12 col-md-2 offset-md-1 img-fluid wow fadeInRightBig"
+                <img class="d-block col-sm-12 col-md-2 offset-md-1 img-fluid text-light wow fadeInRightBig"
                      src="{{asset('images/mon/Scizor.png')}}">
             </div>
             <div class="seperator-checkerboard"></div>

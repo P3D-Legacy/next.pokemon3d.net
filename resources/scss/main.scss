@@ -46,7 +46,7 @@ a.nav-link#nav-current {
 
   .seperator-checkerboard {
     z-index: 1;
-    top: -43px;
+    top: -60px;
     position: relative;
     background-repeat: repeat-x;
     height: 193px;
@@ -59,7 +59,7 @@ a.nav-link#nav-current {
   }
 
   .seperator-checkerboard.inverted {
-    top: 43px;
+    top: 60px;
     transform: scaleX(-1) rotate(3deg);
   }
 
@@ -227,7 +227,47 @@ a.crystal-textbox:hover {
 .bg-summer {
   background-attachment: fixed;
   background-position: center;
-  background-image: url("../img/summer.png");
+  background-image: url("../img/layout/bg_summer.png");
+  background-repeat: repeat;
+
+}
+
+.bg-spring {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/layout/bg_spring.png");
+  background-repeat: repeat;
+
+}
+
+.bg-fall {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/layout/bg_fall.png");
+  background-repeat: repeat;
+
+}
+
+.bg-winter {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/layout/bg_winter.png");
+  background-repeat: repeat;
+
+}
+
+.bg-bg_carpet {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/layout/bg_carpet.png");
+  background-repeat: repeat;
+
+}
+
+.bg-bg_lab_floor {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/layout/bg_lab_floor.png");
   background-repeat: repeat;
 
 }
@@ -246,14 +286,6 @@ a.crystal-textbox:hover {
 .site-header a:hover {
   color: #fff;
   text-decoration: none;
-}
-
-.bg-summer {
-  background-attachment: fixed;
-  background-position: center;
-  background-image: url("../img/layout/bg_lab_floor.png");
-  background-repeat: repeat;
-  color: white;
 }
 
 .bg-scrolling {
