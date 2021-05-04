@@ -28,5 +28,6 @@
 
     </div>
     </div>
-<button role="button" id="reviewCollapseButton" class="btn h2 col-12 crystal-textbox pb-2 showoff_item collapsed"
-        data-toggle="collapse" aria-expanded="false" aria-controls="collapseReview"></button>
+<div class="col-12 align-items-center">
+<button role="button" id="reviewCollapseButton" class="col-12 offset-sm-5 col-sm-6 crystal-textbox showoff_item collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapseReview"></button>
+</div>
