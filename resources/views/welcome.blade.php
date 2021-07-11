@@ -25,6 +25,7 @@
                     <div class="row">
                         <div class="col-12 col-sm-6">@include('partials.newsbox')</div>
                         <div class="col-12 col-sm-6">@include('partials.statistics')</div>
+                        <div class="col-12 col-sm-12">@include('partials.reviews')</div>
                     </div>
                 </div>
             </div>

@@ -341,3 +341,31 @@ a {
     font-size: 3.5rem;
   }
 }
+
+
+#reviewCollapseButton.collapsed:after {
+  content: '+ Show More';
+}
+
+#reviewCollapseButton:not(.collapsed):after {
+  content: '- Show Less';
+}
+
+#reviewbox #collapseReview.collapse:not(.show) {
+  display: block;
+  height: 4.5em;
+  overflow: hidden;
+}
+
+#reviewbox #collapseReview.collapsing {
+  height: 4.5em;
+}
+
+#collapseReview {
+  .row {
+    margin-bottom: 50px;
+    div {
+      min-height: 100%;
+    }
+  }
+}
